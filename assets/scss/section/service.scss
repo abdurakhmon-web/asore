@@ -1,0 +1,237 @@
+/*services css here*/
+.service_section {
+	position: relative;
+	&.mb-123 {
+		@media #{$tablet-device} {
+			margin-bottom: 66px;
+		}
+		@media #{$large-mobile} {
+			margin-bottom: 51px;
+		}
+	}
+	&.mb-222 {
+		@media #{$desktop-device} {
+			margin-bottom: 140px;
+		}
+		@media #{$tablet-device} {
+			margin-bottom: 67px;
+		}
+		@media #{$large-mobile} {
+			margin-bottom: 51px;
+		}
+	}
+}
+.services_gallery {
+	@media #{$small-mobile2} {
+	}
+}
+.services_list {
+	@media #{$tablet-device} {
+	}
+	@media #{$large-mobile} {
+	}
+	@media #{$small-mobile2} {
+	}
+}
+.single_services {
+	margin-bottom: 54px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media #{$desktop-device} {
+		margin-bottom: 36px;
+	}
+	@media #{$tablet-device} {
+		margin-bottom: 32px;
+	}
+	@media #{$large-mobile} {
+		margin-bottom: 32px;
+	}
+}
+.services_position_img {
+	@media #{$tablet-device} {
+		text-align: center;
+		width: 59%;
+	}
+	@media #{$large-mobile} {
+		margin: 50px 0 45px 0;
+	}
+
+	& img {
+		@media #{$laptop-device} {
+		}
+		@media #{$desktop-device} {
+		}
+	}
+}
+.services_text {
+	& h4 {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 500;
+		margin-bottom: 9px;
+		@media #{$desktop-device} {
+			font-size: 17px;
+			line-height: 24px;
+			margin-bottom: 7px;
+		}
+		@media #{$tablet-device} {
+			font-size: 15px;
+			line-height: 17px;
+			margin-bottom: 6px;
+		}
+		// @media #{$large-mobile}{
+		//     font-size: 16px;
+		//     line-height: 22px;
+		//     margin-bottom: 7px;
+		// }
+	}
+	& p {
+		font-size: 14px;
+		line-height: 26px;
+		color: #999999;
+		@media #{$desktop-device} {
+			line-height: 23px;
+		}
+		@media #{$tablet-device} {
+			font-size: 13px;
+			line-height: 23px;
+		}
+		// @media #{$large-mobile}{
+		//     font-size: 14px;
+		//     line-height: 24px;
+		// }
+	}
+}
+.services_icon {
+	width: 70px;
+	height: 70px;
+	background: #fbf6f0;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	@media #{$tablet-device} {
+		width: 55px;
+		height: 55px;
+	}
+	@media #{$large-mobile} {
+		width: 60px;
+		height: 60px;
+	}
+	& i {
+		font-size: 30px;
+		color: #90744f;
+		line-height: 70px;
+		display: block;
+		@media #{$tablet-device} {
+			font-size: 25px;
+			line-height: 55px;
+		}
+		@media #{$large-mobile} {
+			font-size: 25px;
+			line-height: 60px;
+		}
+	}
+}
+
+.services_text {
+	width: calc(100% - 70px);
+	padding-left: 20px;
+	@media #{$tablet-device} {
+		width: calc(100% - 55px);
+		padding-left: 10px;
+	}
+	@media #{$large-mobile} {
+		width: calc(100% - 60px);
+	}
+}
+
+.service-page {
+	& .services_text {
+		width: auto;
+		padding: 0;
+		@media #{$tablet-device} {
+			& h4 {
+				font-size: 18px;
+				line-height: 30px;
+				font-weight: 500;
+				margin-bottom: 9px;
+			}
+		}
+		@media #{$tablet-device} {
+            & p {
+                font-size: 14px;
+                line-height: 26px;
+                color: #999999;
+            }
+		}
+	}
+	& .services_icon {
+		margin-bottom: 20px;
+	}
+
+	@media (min-width: 1600px) {
+		& .row-cols-md-3 > * {
+			width: 27.333333%;
+		}
+	}
+	@media #{$laptop-device} {
+		& .row-cols-md-3 > * {
+			width: 27.333333%;
+		}
+	}
+	@media #{$desktop-device} {
+		& .row-cols-md-3 > * {
+			width: 30.333333%;
+		}
+	}
+	@media #{$tablet-device} {
+		& .row-cols-md-3 > * {
+			width: 30.333333%;
+		}
+	}
+	@media #{$large-mobile} {
+		& .row-cols-md-3 > * {
+			width: 100%;
+		}
+	}
+	@media #{$small-mobile2} {
+		& .row-cols-md-3 > * {
+            width: 100%;
+            display: block !important;
+		}
+	}
+	@media #{$small-mobile} {
+		& .row-cols-md-3 > * {
+			width: 100%;
+		}
+    }
+    
+	@media #{$large-mobile} {
+        .single_services {
+            margin-bottom: 40px;
+            width: 45%;
+        }
+	}
+	@media #{$small-mobile2} {
+        .single_services {
+            width: 100%;
+        }
+	}
+}
+
+.hero-overlay{
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: #000000;
+		opacity: 0.4;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+}

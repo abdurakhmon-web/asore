@@ -1,0 +1,204 @@
+/* 03. product section css here */
+.tab-content > .tab-pane.active {
+	display: block;
+	height: auto;
+	opacity: 1;
+	overflow: visible;
+}
+.tab-content > .tab-pane {
+	display: block;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+.works_slide_section {
+}
+.works_slide_header {
+	& .section_title {
+		margin-bottom: 60px;
+		@media #{$desktop-device} {
+			margin-bottom: 40px;
+		}
+		@media #{$tablet-device} {
+			margin-bottom: 30px;
+		}
+		@media #{$large-mobile} {
+			margin-bottom: 30px;
+		}
+	}
+}
+.tab__button {
+	&.d-flex {
+		@media #{$large-mobile} {
+			justify-content: space-between;
+			margin-top: 12px;
+		}
+		@media #{$small-mobile2} {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	& ul {
+		@media #{$small-mobile2} {
+			justify-content: center;
+		}
+		& li {
+			margin-right: 40px;
+			@media #{$large-mobile} {
+				margin-right: 20px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			& a {
+				font-size: 18px;
+				line-height: 18px;
+				color: #999999;
+				display: inline-block;
+
+				&:hover {
+					color: $secondary_color;
+				}
+				&.active {
+					color: $secondary_color;
+					font-weight: 700;
+				}
+				@media #{$large-mobile} {
+					font-size: 15px;
+				}
+				@media #{$small-mobile2} {
+					font-size: 15px;
+					line-height: 28px;
+				}
+			}
+		}
+	}
+}
+.works_slide_wrapper {
+	position: relative;
+    padding: 80px 0px 80px 0px;
+	@media #{$desktop-device} {
+        padding: 54px 0px 70px 0px;
+	}
+	@media #{$tablet-device} {
+        padding: 44px 0px 60px 0px;
+	}
+	@media #{$large-mobile} {
+        padding: 44px 0px 50px 0px;
+	}
+	&.swiper-container-horizontal {
+		& .swiper-scrollbar {
+			position: absolute;
+			left: 50%;
+			bottom: 0px;
+			z-index: 50;
+			height: 5px;
+			width: 1170px;
+			margin-left: -585px;
+			background: #e6e6e6;
+			@media #{$desktop-device} {
+				width: 922px;
+				margin-left: -461px;
+			}
+			@media #{$tablet-device} {
+				width: 700px;
+				margin-left: -350px;
+			}
+			@media #{$large-mobile} {
+				width: 350px;
+				margin-left: -175px;
+			}
+		}
+		.swiper-scrollbar-drag {
+			background: #90744f;
+			border-radius: 0px;
+		}
+	}
+}
+.work_slick_text {
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -100px;
+	transition: 0.4s;
+	& .title {
+		font-size: 30px;
+		color: #000000;
+        font-weight: 700;
+        margin: 0;
+		@media #{$desktop-device} {
+			font-size: 28px;
+		}
+		@media #{$tablet-device} {
+			font-size: 24px;
+		}
+		@media #{$large-mobile} {
+			font-size: 20px;
+		}
+		& .title-link {
+			color: #000000;
+			&:hover {
+				color: #90744f;
+			}
+		}
+	}
+}
+.works_slick_list {
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		.work_slick_text {
+			bottom: 0;
+		}
+	}
+}
+
+.view_all_works {
+	margin-top: 141px;
+	margin-bottom: 148px;
+	@media #{$desktop-device} {
+        margin-top: 111px;
+        margin-bottom: 118px;
+	}
+	@media #{$tablet-device} {
+        margin-top: 91px;
+        margin-bottom: 98px;
+	}
+	@media #{$large-mobile} {
+        margin-top: 71px;
+        margin-bottom: 67px;
+	}
+	& a {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: 700;
+		color: $secondary_color;
+		word-spacing: 2px;
+		letter-spacing: 7px;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 21px;
+		&::before {
+			position: absolute;
+			content: "";
+			height: 1px;
+			width: 70px;
+			background: $secondary_color;
+			bottom: 0;
+			left: 50%;
+			transform: translatex(-50%);
+		}
+		@media #{$large-mobile} {
+			font-size: 13px;
+			line-height: 26px;
+			letter-spacing: 2px;
+			padding-bottom: 13px;
+		}
+	}
+}

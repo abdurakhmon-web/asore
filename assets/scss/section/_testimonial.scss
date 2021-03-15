@@ -1,0 +1,124 @@
+/*testimonial css here*/
+.testimonial_section {
+	position: relative;
+	margin-bottom: 135px;
+	@media #{$desktop-device} {
+		margin-bottom: 105px;
+	}
+	@media #{$tablet-device} {
+		margin-bottom: 85px;
+	}
+	@media #{$large-mobile} {
+		margin-bottom: 48px;
+	}
+}
+.testimonial_inner {
+	position: relative;
+	z-index: 9;
+}
+.testimonial_position_img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.testimonial_slick {
+	padding-bottom: 87px;
+	@media #{$laptop-device} {
+		padding-bottom: 70px;
+	}
+	@media #{$desktop-device} {
+		padding-bottom: 60px;
+	}
+	@media #{$tablet-device} {
+		padding-bottom: 43px;
+	}
+	@media #{$large-mobile} {
+		padding-bottom: 48px;
+		margin-bottom: 0px;
+	}
+}
+.testimonial_content {
+	& h3 {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 700;
+		margin-bottom: 24px;
+		@media #{$desktop-device} {
+			margin-bottom: 20px;
+		}
+		@media #{$tablet-device} {
+			margin-bottom: 15px;
+			font-size: 17px;
+			line-height: 22px;
+		}
+		@media #{$large-mobile} {
+			margin-bottom: 16px;
+		}
+	}
+	& > p {
+		font-size: 14px;
+		line-height: 28px;
+		color: #666666;
+		margin-bottom: 0;
+		@media #{$desktop-device} {
+		}
+		@media #{$large-mobile} {
+		}
+	}
+}
+.testimonial_footer {
+	margin-top: 47px;
+	@media #{$desktop-device} {
+		margin-top: 30px;
+	}
+	@media #{$tablet-device} {
+		margin-top: 18px;
+	}
+	@media #{$large-mobile} {
+		margin-top: 25px;
+	}
+	& p {
+		font-size: 13px;
+		line-height: 24px;
+		color: #999999;
+		font-style: italic;
+		& a {
+			font-size: 16px;
+			font-weight: 700;
+			color: #000000;
+			font-style: normal;
+			&:hover {
+				color: $secondary_color;
+			}
+		}
+	}
+}
+
+.testimonial_slick {
+	.swiper-button-next:after,
+	.swiper-button-prev:after {
+        display: none;
+    }
+    
+    .swiper-button-next, .swiper-button-prev{
+        top:auto;
+        bottom: 0;
+        color:#999999;
+        font-size: 24px;
+        transition: .3s;
+		&:hover {
+			color: $secondary_color;
+		}
+    }
+    .swiper-button-next{
+        right: auto;
+        left: 50px;
+    }
+    .swiper-button-prev{
+        right: auto;
+        left: 0;
+    }
+}
